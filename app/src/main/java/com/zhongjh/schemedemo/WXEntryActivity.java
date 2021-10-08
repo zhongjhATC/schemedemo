@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
+ * 这里获取到值后，将值缓存下来，让上一个MainActivity能直接使用
  * @author zhongjh
  * @date 2021/10/8
  */
