@@ -13,12 +13,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // 跳转到登录界面
         findViewById(R.id.tvClick).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = "scheme://scheme.test.com";
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, LoginActivity.class);
                 MainActivity.this.startActivity(intent);
             }
         });
